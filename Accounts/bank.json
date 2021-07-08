@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "Nazar1",
+    "Surname": "Hutsuliak1",
+    "Balance": 100,
+    "Currency": "USD",
+    "RegistrationCity": "Vinnytsia",
+    "Age": 20
+  },
+  {
+    "Name": "Nazar2",
+    "Surname": "Hutsuliak2",
+    "Balance": 200,
+    "Currency": "GBP",
+    "RegistrationCity": "Kamianec-Podolskiy",
+    "Age": 21
+  },
+  {
+    "Name": "Nazar3",
+    "Surname": "Hutsuliak3",
+    "Balance": 300,
+    "Currency": "JPY",
+    "RegistrationCity": "Kyiv",
+    "Age": 16
+  },
+  {
+    "Name": "Nazar4",
+    "Surname": "Hutsuliak4",
+    "Balance": 400.34,
+    "Currency": "USD",
+    "RegistrationCity": "Lviv",
+    "Age": 18
+  },
+  {
+    "Name": "Nazar5",
+    "Surname": "Hutsuliak5",
+    "Balance": 500,
+    "Currency": "EUR",
+    "RegistrationCity": "Rivne",
+    "Age": 30
+  },
+  {
+    "Name": "Nazar6",
+    "Surname": "Hutsuliak6",
+    "Balance": 600,
+    "Currency": "TRY",
+    "RegistrationCity": "Chernivtsi",
+    "Age": 40
+  },
+  {
+    "Name": "Nazar7",
+    "Surname": "Hutsuliak7",
+    "Balance": 7000.30,
+    "Currency": "UAH",
+    "RegistrationCity": "Dnipro",
+    "Age": 100
+  },
+  {
+    "Name": "Nazar8",
+    "Surname": "Hutsuliak8",
+    "Balance": 800,
+    "Currency": "EUR",
+    "RegistrationCity": "Ivano-Frankivsk",
+    "Age": 24
+  },
+  {
+    "Name": "Nazar9",
+    "Surname": "Hutsuliak9",
+    "Balance": 900,
+    "Currency": "UAH",
+    "RegistrationCity": "Odessa",
+    "Age": 22
+  },
+  {
+    "Name": "Nazar10",
+    "Surname": "Hutsuliak10",
+    "Balance": 1000,
+    "Currency": "UAH",
+    "RegistrationCity": "Chernigiv",
+    "Age": 21
+  }
+]
