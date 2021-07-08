@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
-using System.IO;
 using AccountsLibrary;
 namespace Accounts
 {
@@ -12,7 +9,7 @@ namespace Accounts
             Console.Write("Please enter file name : ");
 
             IAccounts accounts = new AccountsFromJson();
-            var accountslist= accounts.InitList();
+            var accountslist = accounts.InitList();
 
             Console.WriteLine("\nAcounts Table");
             Console.WriteLine("-------------------------------------------------------------------------------------");
@@ -27,7 +24,6 @@ namespace Accounts
                 Console.WriteLine("-------------------------------------------------------------------------------------");
                 Console.WriteLine(result);
             }
-
 
             Console.ReadKey();
         }

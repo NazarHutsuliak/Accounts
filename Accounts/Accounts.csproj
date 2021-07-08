@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountsLibraryTests\AccountsLibraryTests.csproj" />
     <ProjectReference Include="..\AccountsLibrary\AccountsLibrary.csproj" />
   </ItemGroup>
 

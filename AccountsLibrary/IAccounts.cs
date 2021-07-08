@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using System.Collections.Generic;
 namespace AccountsLibrary
 {
-
     public interface IAccounts
     {
         string Name { get; set; }
@@ -13,9 +9,11 @@ namespace AccountsLibrary
         string Currency { get; set; }
         string RegistrationCity { get; set; }
         int Age { get; set; }
-        string getStringFromLinkToFile();
-        List<AccountsFromJson> InitList();
-        string DrawHeader();
 
+        string getStringFromLinkToFile();
+
+        List<AccountsFromJson> InitList();
+
+        string DrawHeader();
     }
 }
