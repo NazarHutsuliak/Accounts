@@ -1,16 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json;
+using System.IO;
 
 namespace AccountsLibrary
 {
-    public class AdaperFromJson : IAdapters
+    public class AdaperFromJson : IDataAdapter
     {
-        public List<AccountsModel> accountsModel = new List<AccountsModel>();
-
-        public AdaperFromJson(string file)
+        private readonly string _content;
+        public AdaperFromJson(string PathToFile)
         {
-            accountsModel = JsonSerializer.Deserialize<List<AccountsModel>>(file);
+            _content = File.ReadAllText(PathToFile);
         }
 
+        public List<AccountsModel> GetData()
+        {
+            return JsonSerializer.Deserialize<List<AccountsModel>>(_content);
+        }
     }
 }

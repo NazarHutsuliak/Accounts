@@ -1,20 +1,17 @@
 ﻿using System;
 using System.IO;
 using AccountsLibrary;
-
+using System.Collections.Generic;
+using CommandLine;
+using AccountsLibrary.Options;
 namespace Accounts
 {
     class Program
     {
         static void Main(string[] args)
-        {   
-            Console.Write("Please enter file name : ");
+        {
+            Parser.Default.ParseArguments<ProgranOptions>(args).WithParsed<ProgranOptions>(p => { });
 
-            string fileName = Console.ReadLine();
-            string file = File.ReadAllText(fileName);
-
-            var adapters = new AdaperFromJson(file);
-            new ViewToConsole(adapters.accountsModel);
 
             Console.ReadKey();
         }
