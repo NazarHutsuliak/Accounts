@@ -1,22 +1,26 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Text;
 
 namespace AccountsLibrary.Options
 {
-    public class Builder : ProgranOptions
+    public class Builder 
     {
-        public List<AccountsModel> Input()
+        ProgranOptions _options;
+
+        public Builder(ProgranOptions options)
         {
-            IDataAdapter dataProvider = DataProvider.Create(PathToFile);
-            return dataProvider.GetData();
+            _options = options;
         }
 
-
-        public void Output()
+        public int Build()
         {
-            IView view = ViewProvider.CreateView(DrawTo);
-            view.Draw(Input());
+            IDataAdapter dataProvider = DataProvider.Create(_options.PathToFile);
+            List<AccountsModel> accounts = dataProvider.GetData();
+
+            IView view = ViewProvider.CreateView(_options.DrawTo);
+            view.Draw(accounts);
+
+            return 0;
         }
 
     }

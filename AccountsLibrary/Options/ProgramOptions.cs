@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 using CommandLine;
 
 namespace AccountsLibrary
 {
-
     public class ProgranOptions
     {
         [Option('p', "path", Required = true, HelpText = "Path to file ")]

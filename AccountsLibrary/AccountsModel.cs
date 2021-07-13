@@ -1,4 +1,5 @@
-﻿namespace AccountsLibrary
+﻿
+namespace AccountsLibrary
 {
     public class AccountsModel
     {
