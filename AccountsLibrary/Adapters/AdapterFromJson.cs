@@ -4,12 +4,12 @@ using System.IO;
 
 namespace AccountsLibrary
 {
-    public class AdaperFromJson : IDataAdapter
+    public class AdapterFromJson : IDataAdapter
     {
         private readonly string _content;
-        public AdaperFromJson(string PathToFile)
+        public AdapterFromJson(string pathToFile)
         {
-            _content = File.ReadAllText(PathToFile);
+            _content = File.ReadAllText(pathToFile);
         }
 
         public List<AccountsModel> GetData()

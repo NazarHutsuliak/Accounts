@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Accounts": {
+      "commandName": "Project",
+      "commandLineArgs": "-p bank.yaml -d console"
+    }
+  }
+}

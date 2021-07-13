@@ -5,12 +5,14 @@ namespace AccountsLibrary
 {
     public class DataProvider
     {
-        public static IDataAdapter Create(string PathToFile)
+        public static IDataAdapter Create(string pathToFile)
         {
-            var extension = Path.GetExtension(PathToFile);
-            if (extension == ".json")
-                return new AdaperFromJson(PathToFile);
-            else throw new Exception("...");
+            return Path.GetExtension(pathToFile) switch
+            {
+                ".json" => new AdapterFromJson(pathToFile),
+                ".yaml" => new AdapterFromYaml(pathToFile),
+                _ => throw new Exception("Unknown dile format"),
+            };
         }
     }
 }

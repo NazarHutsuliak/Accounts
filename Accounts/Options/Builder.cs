@@ -5,7 +5,7 @@ namespace AccountsLibrary.Options
 {
     public class Builder 
     {
-        ProgranOptions _options;
+        private readonly ProgranOptions _options;
 
         public Builder(ProgranOptions options)
         {
@@ -14,11 +14,10 @@ namespace AccountsLibrary.Options
 
         public int Build()
         {
-            IDataAdapter dataProvider = DataProvider.Create(_options.PathToFile);
-            List<AccountsModel> accounts = dataProvider.GetData();
+            var dataProvider = DataProvider.Create(_options.PathToFile);
+            var accounts = dataProvider.GetData();
 
-            IView view = ViewProvider.CreateView(_options.DrawTo);
-            view.Draw(accounts);
+            ViewProvider.CreateView(_options.DrawTo).Draw(accounts);
 
             return 0;
         }

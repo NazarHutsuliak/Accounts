@@ -7,8 +7,7 @@ namespace AccountsLibrary
     {
         public static IView CreateView(string DrawTo)
         {
-            var view = DrawTo;
-            if (view == "console")
+            if (DrawTo == "console")
                 return new ViewToConsole(new List<AccountsModel>());
             else throw new Exception("...");
         }

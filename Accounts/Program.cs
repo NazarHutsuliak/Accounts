@@ -9,11 +9,9 @@ namespace Accounts
     {
         static void Main(string[] args)
         {
-            var options = new ProgranOptions();
-
-            Parser.Default.ParseArguments<ProgranOptions>(args).MapResult((options) => new Builder(options).Build(), errs => 1);
-
-
+            Parser.Default.ParseArguments<ProgranOptions>(args)
+                .MapResult((options) => new Builder(options).Build(), 
+                errs => 1);
             Console.ReadKey();
         }
     }
