@@ -7,13 +7,13 @@ namespace AccountsLibrary
   
         public ViewToConsole(List<AccountsModel> accountsModel)
         {
-            Console.WriteLine("\nAcounts Table\n");
             DrawHeader();
             Draw(accountsModel);   
         }
 
         private void DrawHeader()
         {
+            Console.WriteLine("\nAcounts Table\n");
             Console.WriteLine(String.Format("| {0,12} | {1,15} | {2,8} | {3,8} | {4,20} | {5,3} |",
                     "Name", "Surname", "Balance", "Currency", "City", "Age"));
         }

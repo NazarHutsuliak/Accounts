@@ -1,6 +1,4 @@
 ﻿
-using System.Collections.Generic;
-
 namespace AccountsLibrary.Options
 {
     public class Builder 
@@ -14,10 +12,10 @@ namespace AccountsLibrary.Options
 
         public int Build()
         {
-            var dataProvider = DataProvider.Create(_options.PathToFile);
+            var dataProvider = DataProvider.Create(_options.pathToFile);
             var accounts = dataProvider.GetData();
 
-            ViewProvider.CreateView(_options.DrawTo).Draw(accounts);
+            ViewProvider.CreateView(_options.drawTo).Draw(accounts);
 
             return 0;
         }
