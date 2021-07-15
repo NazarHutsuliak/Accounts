@@ -5,10 +5,9 @@ namespace AccountsLibrary
    public class ViewToConsole : IView
     {
   
-        public ViewToConsole(List<AccountsModel> accountsModel)
+        public ViewToConsole()
         {
-            DrawHeader();
-            Draw(accountsModel);   
+            DrawHeader();  
         }
 
         private void DrawHeader()

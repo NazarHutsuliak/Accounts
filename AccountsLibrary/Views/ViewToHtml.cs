@@ -5,14 +5,7 @@ namespace AccountsLibrary
 {
    public class ViewToHtml : IView
     {
-  
-        public ViewToHtml(List<AccountsModel> accountsModel)
-        {
-            Draw(accountsModel);   
-        }
-
-
-        public void Draw (List<AccountsModel> accountsModel)
+          public void Draw (List<AccountsModel> accountsModel)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("<table>");

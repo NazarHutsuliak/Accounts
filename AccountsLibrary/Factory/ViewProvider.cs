@@ -9,8 +9,8 @@ namespace AccountsLibrary
         {
             return drawTo switch
             {
-                "console" => new ViewToConsole(new List<AccountsModel>()),
-                "html" => new ViewToHtml(new List<AccountsModel>()),
+                "console" => new ViewToConsole(),
+                "html" => new ViewToHtml(),
                 _ => throw new Exception("..."),
             };
         }
