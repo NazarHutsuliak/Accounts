@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-
-namespace AccountsLibrary
+using Accounts.Adapters;
+namespace Accounts
 {
     public class DataProvider
     {

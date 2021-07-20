@@ -2,7 +2,7 @@
 using System.IO;
 using YamlDotNet.Serialization;
 
-namespace AccountsLibrary
+namespace Accounts.Adapters
 {
     public class AdapterFromYaml : IDataAdapter
     {

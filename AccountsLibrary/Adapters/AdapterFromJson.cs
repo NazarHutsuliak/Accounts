@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.IO;
 
-namespace AccountsLibrary
+namespace Accounts.Adapters
 {
     public class AdapterFromJson : IDataAdapter
     {

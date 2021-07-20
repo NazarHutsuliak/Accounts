@@ -1,7 +1,7 @@
 ﻿
 using CommandLine;
 
-namespace AccountsLibrary
+namespace Program.Options
 {
     public class ProgranOptions
     {

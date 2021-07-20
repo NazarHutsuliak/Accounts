@@ -20,7 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AccountsLibrary\AccountsLibrary.csproj" />
+    <ProjectReference Include="..\AccountsLibrary\Accounts.csproj" />
+    <ProjectReference Include="..\AccountsWithSum\AccountsWithSum.csproj" />
+    <ProjectReference Include="..\Accounts\Program.csproj" />
+    <ProjectReference Include="..\View\AccountsView.csproj" />
   </ItemGroup>
 
 </Project>

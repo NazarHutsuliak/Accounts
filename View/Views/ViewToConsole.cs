@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace AccountsLibrary
+using AccountsWithSum;
+namespace AccountsView.Views
 {
    public class ViewToConsole : IView
     {
@@ -17,7 +18,7 @@ namespace AccountsLibrary
                     "Name", "Surname", "Balance", "Currency", "City", "Age"));
         }
 
-        public void Draw (List<AccountsModel> accountsModel)
+        public void Draw (IEnumerable<AccountsModelWithSumBalance> accountsModel)
         {
             foreach (var item in accountsModel)
             {

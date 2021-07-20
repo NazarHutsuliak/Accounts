@@ -1,9 +1,9 @@
 ﻿using System;
-using AccountsLibrary;
+using Program.Options;
 using CommandLine;
-using AccountsLibrary.Options;
 
-namespace Accounts
+
+namespace Program
 {
     class Program
     {

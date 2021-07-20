@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AccountsLibraryTests\AccountsLibraryTests.csproj" />
-    <ProjectReference Include="..\AccountsLibrary\AccountsLibrary.csproj" />
+    <ProjectReference Include="..\AccountsLibrary\Accounts.csproj" />
+    <ProjectReference Include="..\View\AccountsView.csproj" />
   </ItemGroup>
 
 </Project>

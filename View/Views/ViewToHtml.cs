@@ -1,11 +1,12 @@
 ﻿using System.Text;
 using System.Linq;
 using System.Collections.Generic;
-namespace AccountsLibrary
+using AccountsWithSum;
+namespace AccountsView.Views
 {
    public class ViewToHtml : IView
     {
-          public void Draw (List<AccountsModel> accountsModel)
+          public void Draw (IEnumerable<AccountsModelWithSumBalance> accountsModel)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("<table>");

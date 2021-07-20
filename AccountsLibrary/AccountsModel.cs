@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace AccountsLibrary
+namespace Accounts
 {
     public class AccountsModel
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-
-namespace AccountsLibrary
+using Accounts;
+namespace Accounts
 {
     public interface IDataAdapter
     {

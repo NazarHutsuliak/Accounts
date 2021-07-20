@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
+using AccountsView.Views;
 
-namespace AccountsLibrary
+namespace AccountsView
 {
     public class ViewProvider
     {
