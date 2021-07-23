@@ -14,7 +14,7 @@ namespace AccountsWithSum
         public string RegistrationCity { get; set; }
         public int Age { get; set; }
 
-        public IEnumerable<AccountsModelWithSumBalance> GetAccountsSumBalances(List<AccountsModel> accounts)
+        public IEnumerable<AccountsModelWithSumBalance> GetAccountsWithSumBalances(List<AccountsModel> accounts)
         {
             var accountsModelWith = accounts.Select(x => new AccountsModelWithSumBalance
             {

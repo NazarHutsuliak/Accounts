@@ -19,7 +19,7 @@ namespace Program.Options
             var accounts = dataProvider.GetData();
 
             var accountsWithSum = new AccountsModelWithSumBalance();
-            var result = accountsWithSum.GetAccountsSumBalances(accounts);
+            var result = accountsWithSum.GetAccountsWithSumBalances(accounts);
 
             ViewProvider.CreateView(_options.drawTo).Draw(result);
 
