@@ -2,7 +2,7 @@
   "profiles": {
     "Accounts": {
       "commandName": "Project",
-      "commandLineArgs": "-p bank.json -d html"
+      "commandLineArgs": "-p bank.json -d console"
     }
   }
 }
